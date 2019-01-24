@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+.es {
+ width: 30px;
+  padding: -15px;
+   margin-left: -80px;
+}
+
+.es2 {
+ width: 140px;
+  padding: 15px;
+   margin-left: 110px;
+}
+
+</style>
+
+<body>
+
+	
+<form name="f1">
+<table style="width:100%" border="1px">
+  <tr> 
+  	<h1>Crackear el codigo</h1>
+  	<th  width="250" height="250">
+   		<img src="https://it-shop.mx/pub/media/catalog/product/cache/image/800x800/e9c3970ab036de70892d86c6d221abfe/a/n/anviz_an-ul30bt-sn.jpg" width="250" height="250">
+   		<br>
+   		<br>
+
+   		<th>
+   			<input class="es" type="text"  id="id4" name="case1">  
+   			<input class="es" type="text" id="id5" name="case2"> 
+   			<input class="es" type="text" id="id6" name="case3">
+
+   			<input  class="es2" type="text" id="txt1" name="c">
+   			
+   			<br>
+   			<br>
+   			
+   			<input class="es" type="text" id="id7" name="case4"> 
+   			<input class="es" type="text" id="id8" name="case5">
+			<input class="es" type="text" id="id9" name="case6">
+
+			<input  class="es2" type="text" id="txt2" name="cas">
+			
+			<br>
+   			<br>
+
+   			<input class="es" type="text" id="id10" name="case7"> 
+   			<input class="es" type="text" id="id11" name="case8">
+			<input class="es" type="text" id="id12" name="case9">
+
+			<input  class="es2" type="text" id="txt3" name="ca">
+
+
+
+   			<br>
+   			<br>
+
+
+			<input type="button" onclick="numeroRandom()" value="Generar">
+		</th>
+   		
+
+  </tr>
+
+  </form>
+
+  <tr>
+  	<th><h2>Codigo</h2>
+
+  <form name="f2">
+  
+  	<input type="text" id="id1" name="0" value="0">
+
+	<input type="text" id="id2" name="0" value="0">
+  
+ 	<input type="text" id="id3" name="0" value="0">
+  
+  
+
+
+  <br>
+ 	<br>
+ 	<br>
+  <input type="button" onclick="des()" value="Desbloquear">
+  <br>
+  <br>
+</form> 
+
+  	</th>
+
+
+
+  </tr>
+  
+</table>
+
+
+<script type="text/javascript">
+
+
+			var min=0; 
+    		var max=9;  
+    		var ran1 =Math.floor(Math.random() * (+max - +min)) + +min; 
+    		var ran2 =Math.floor(Math.random() * (+max - +min)) + +min; 
+    		var ran3 =Math.floor(Math.random() * (+max - +min)) + +min; 
+   			var res1 = ran1;
+   			var res2 = ran2;
+   			var res3 = ran3;
+
+
+		function des() {
+
+			var resIn=document.getElementById("id1").value;
+   			var resIn2=document.getElementById("id2").value;
+   			var resIn3=document.getElementById("id3").value;
+   			
+
+
+   			alert("random: "+ran1+ran2+ran3+" in:"+resIn)
+
+	   		
+   			if (res1==resIn && res2 == resIn2 && res3 == resIn3) {
+   				alert("Se ha desbloquedo!")
+   			}
+   			//alert("no se ha podido desbloquear!")
+
+   			
+	   	} 
+
+		
+
+
+	   	function numeroRandom() {
+	   		var min=0; 
+    		var max=9;  
+    		var random1 =Math.floor(Math.random() * (+max - +min)) + +min; 
+    		var random2 =Math.floor(Math.random() * (+max - +min)) + +min; 
+    		var random3 =Math.floor(Math.random() * (+max - +min)) + +min; 
+    		var random4 =Math.floor(Math.random() * (+max - +min)) + +min; 
+    		var random5 =Math.floor(Math.random() * (+max - +min)) + +min;
+    		var random6 =Math.floor(Math.random() * (+max - +min)) + +min; 
+    		var random7 =Math.floor(Math.random() * (+max - +min)) + +min; 
+    		var random8 =Math.floor(Math.random() * (+max - +min)) + +min; 
+    		var random9 =Math.floor(Math.random() * (+max - +min)) + +min; 
+
+   			document.f1.case1.value = random1
+   			document.f1.case2.value = random2
+   			document.f1.case3.value = random3
+   			document.f1.case4.value = random4
+   			document.f1.case5.value = random5
+   			document.f1.case6.value = random6
+   			document.f1.case7.value = random7
+   			document.f1.case8.value = random8
+   			document.f1.case9.value = random9
+
+
+   			var resIn4=document.getElementById("id4").value;
+   			var resIn5=document.getElementById("id5").value;
+   			var resIn6=document.getElementById("id6").value;
+   			var resIn7=document.getElementById("id7").value;
+   			var resIn8=document.getElementById("id8").value;
+   			var resIn9=document.getElementById("id9").value;
+   			var resIn10=document.getElementById("id10").value;
+   			var resIn11=document.getElementById("id11").value;
+   			var resIn12=document.getElementById("id12").value;
+
+   			if (resIn4==ran1 || resIn5==ran2 || resIn6 == ran3) {
+   				
+   				document.f1.txt1.value = "Aqui hay un numero";
+   				
+   			}if (resIn4==ran1 && resIn5==ran2 || resIn6 == ran3) {
+   				document.f1.txt1.value = "Aqui hay dos numeros";
+   			}
+
+   			else 
+   			document.f1.txt1.value = "No es ninguno";
+
+
+
+
+
+
+   			if (resIn7==ran1 || resIn8==ran2 || resIn9 == ran3) {
+   				
+   				document.f1.txt2.value = "Aqui hay un numero";
+   			}else 
+   			document.f1.txt2.value = "No es ninguno";
+
+   			if (resIn10==ran1 || resIn11==ran2 || resIn12 == ran3) {
+   				
+   				document.f1.txt3.value = "Aqui hay un numero";
+   			}else 
+   			document.f1.txt3.value = "No es ninguno";
+
+
+	   	} 
+
+	   	
+   			 
+			
+
+
+
+ </script>
+
+	
+
+
+</body>
+</html>
